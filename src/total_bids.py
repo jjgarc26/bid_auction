@@ -1,6 +1,3 @@
-# add bids will update the dict with keys and values
-def add_bids(bids, name, amount):
-    bids.update({name: amount})
 
 # highest_bid will find the highest bid and return the person with the highest bid
 def highest_bid(bid):

@@ -1,4 +1,4 @@
-from total_bids import add_bids,highest_bid
+from total_bids import highest_bid
 
 print("Welcome to bidding")
 # Empty variable to hold all bidders and continue the while loop
@@ -9,7 +9,9 @@ while continue_bid:
     name = input("What is your name?: ")
     bid = int(input("How much are you bidding?: $"))
     more_bids = input("Are there anymore bidders?: ")
-    add_bids(bids, name, bid)
+
+    # Updates bid to include new inputs
+    bids.update({name: bid})
 
     if more_bids == "yes":
         continue
